@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,90 +10,11 @@
     <link rel="stylesheet" href="/dashboard.css">
     <title>Admin Dashboard</title>
   </head>
-  <body>
+  <body> -->
     
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light mb-0">
-      <div class="navbar-toggler mr-auto mb-2 text-white" >
-        <a class="text-white" href="/invest"></a><i class="fab fa-bitcoin fa-2x mx-3 text-white"></i>Coin Analytica</a>
-      </div>
-      <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-     
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- sidebar -->
-            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
-              <a href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">
-               <div class="aa"> <i class="fab fa-bitcoin fa-2x "></i>Coin Analytica</a> </div>
-              </a>
-              <div class="bottom-border pb-3 namer">
-                <img src="/profile.png" width="50" class="rounded-circle mr-3">
-                <h4><a href="#" class="text-white"><%= user.fisrt_name.toUpperCase() + " " + user.last_name.toUpperCase() %> </a></h4>
-              </div>
-              <ul class="navbar-nav flex-column mt-4">
-                <li class="nav-item"><a href="/dashboard" class="nav-link text-white p-3 mb-2 "><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
-                <li class="nav-item"><a href="/invest" class="nav-link text-white p-3 mb-2 sidebar-link current"><i class="fas fa-piggy-bank text-light fa-lg mr-3"></i>Invest</a></li>
-                <li class="nav-item"><a href="/withdrawal" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-money-bill-alt text-light fa-lg mr-3"></i>withdraw</a></li>
-                <li class="nav-item"><a href="/profile" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
-                <li class="nav-item"><a href="/settings" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-wrench text-light fa-lg mr-3"></i>Settings</a></li>
-              </ul>
-            </div>
-            <!-- end of sidebar -->
 
-            <!-- top-nav -->
-            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto fn fixed-top py-2 top-navbar">
-              <div class="row align-items-center">
-                <div class="col-md-4">
-                  <h4 class="text-light text-uppercase mb-0">Checkout</h4>
-                </div>
-                <div class="col-md-5">
-                  <form>
-                  </form>
-                </div>
-                <div class="col-md-3">
-                  <ul class="navbar-nav">
-                    <li class="nav-item icon-parent"><a href="#" class="nav-link icon-bullet"><i class="fas fa-bell text-muted fa-lg"></i></a></li>
-                    <li class="nav-item ml-md-auto"><a href="/users/notification" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- end of top-nav -->
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- end of navbar -->
-
-    <!-- modal -->
-    <div class="modal fade" id="sign-out">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Want to leave?</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            Press logout to leave
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Stay Here</button>
-            <a href="/users/logout" class="btn btn-danger">Logout</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of modal -->
-
-    <!-- cards -->
-
-    <!-- end of cards -->
-    
     <!-- activities / quick post -->
-    <section>
+    <!-- <section>
         <div class="container-fluid">
           <div class="row">
             <div class="col-xl-10 col-lg-11 col-md-12 ml-auto ">
@@ -106,7 +27,7 @@
                         <li class="list-inline-item mr-4">
                           <a href="#">
                             <i class="fas fa-pencil-alt text-success"></i>
-                            <span class="h6 text-muted">Status: </span><span class="h6 text-danger"> pending</span>
+                            <span class="h6 text-primary">Status: </span><span class="h6 text-danger"> pending</span>
                           </a>
                         </li>
                         
@@ -120,7 +41,7 @@
                       <form>
                         <div class="form-group">
                             <p class="font-weight-bold text-danger" id="counter">Expires in 721 Secs</p>
-                          <button type="button" class="btn btn-md text-uppercase font-weight-bold text-light bg-info py-2 mb-5" id="refresh">refresh time</button>
+                          <button type="button" class="btn btn-md text-uppercase font-weight-bold text-light bg-danger py-2 mb-5" id="refresh">refresh time</button>
                         </div>
                       </form>
                      
@@ -139,27 +60,418 @@
                             </div>
                             <p class="font-weight-bold d-block" ></p>1EHYaMqu2EtBNQREWpfEPv4uBM8bCyzgFk</p>
                             <p class="font-weight-bold text-danger">Transmit Payment to the above Address to complete  transaction.</p>
-                            <span><button type="button" class="btn text-uppercase font-weight-bold text-light bg-info py-2 mb-5" id="copy">copy Address</button></span>
+                            <span><button type="button" class="btn text-uppercase font-weight-bold text-light bg-danger py-2 mb-5" id="copy">copy Address</button></span>
                         </div>
                       </div>
                     </div>
-                    <a href="/bloop" class=" col-7 btn text-center text-uppercase font-weight-bold text-light bg-info py-2  mx-auto mb-4">Confirm payment</a>
+                    <a href="/bloop" class=" col-7 btn text-center text-uppercase font-weight-bold text-light bg-danger py-2  mx-auto mb-4">Confirm payment</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- end of activities / quick post -->
   
-    
+<!--     
     <script src="dashboard.js"></script>
   </body>
 </html>
 
+ -->
 
 
 
 
+ <!doctype html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta http-equiv="Content-Language" content="en">
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <title>Analytics Dashboard </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+   
+ <link href="/main.css" rel="stylesheet">
+</head>
+ <body>
+     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+         <div class="app-header header-shadow">
+             <div class="app-header__logo">
+                 <div class="logo-src"></div>
+                 <div class="header__pane ml-auto">
+                     <div>
+                         <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                             <span class="hamburger-box">
+                                 <span class="hamburger-inner"></span>
+                             </span>
+                         </button>
+                     </div>
+                 </div>
+             </div>
+             <div class="app-header__mobile-menu">
+                 <div>
+                     <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                         <span class="hamburger-box">
+                             <span class="hamburger-inner"></span>
+                         </span>
+                     </button>
+                 </div>
+             </div>
+             <div class="app-header__menu">
+                 <span>
+                     <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                         <span class="btn-icon-wrapper">
+                             <i class="fa fa-ellipsis-v fa-w-6"></i>
+                         </span>
+                     </button>
+                 </span>
+             </div>    <div class="app-header__content">
+                 <div class="app-header-left">
+                     <div class="search-wrapper">
+                         <!-- <div class="input-holder">
+                             <input type="text" class="search-input" placeholder="Type to search">
+                             <button class="search-icon"><span></span></button>
+                         </div> -->
+                         <button class="close"></button>
+                     </div>
+                     <ul class="header-menu nav">
+                         <li class="dropdown nav-item">
+                             <a href="javascript:void(0);" class="nav-link">
+                                 <i class="nav-link-icon fa fa-cog"></i>
+                                 Settings
+                             </a>
+                         </li>
+                     </ul>        </div>
+                 <div class="app-header-right">
+                     <div class="header-btn-lg pr-0">
+                         <div class="widget-content p-0">
+                             <div class="widget-content-wrapper">
+                                 <div class="widget-content-left">
+                                     <div class="btn-group">
+                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                             <img width="42" class="rounded-circle" src="assets/images/avatars/profile.png" alt="">
+                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                         </a>
+                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                             <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                             <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                             <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                             <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                             <div tabindex="-1" class="dropdown-divider"></div>
+                                             <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="widget-content-left  ml-3 header-user-info">
+                                     <div class="widget-heading">
+                                         Alina Mclourd
+                                     </div>
+                                     <div class="widget-subheading">
+                                         VP People Manager
+                                     </div>
+                                 </div>
+                                 <div class="widget-content-right header-user-info ml-3">
+                                     <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
+                                         <i class="fa text-white fa-calendar pr-1 pl-1"></i>
+                                     </button>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>        </div>
+             </div>
+         </div>        <div class="ui-theme-settings">
+             <div class="theme-settings__inner">
+                 <div class="scrollbar-container">
+                     <div class="theme-settings__options-wrapper">
+                         <h3 class="themeoptions-heading">Layout Options
+                         </h3>
+                         <div class="p-3">
+                             <ul class="list-group">
+                                 <li class="list-group-item">
+                                     <div class="widget-content p-0">
+                                         <div class="widget-content-wrapper">
+                                             <div class="widget-content-left mr-3">
+                                                 <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                     <div class="switch-animate switch-on">
+                                                         <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="widget-content-left">
+                                                 <div class="widget-heading">Fixed Header
+                                                 </div>
+                                                 <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="widget-content p-0">
+                                         <div class="widget-content-wrapper">
+                                             <div class="widget-content-left mr-3">
+                                                 <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                     <div class="switch-animate switch-on">
+                                                         <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="widget-content-left">
+                                                 <div class="widget-heading">Fixed Sidebar
+                                                 </div>
+                                                 <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </li>
+                                 <li class="list-group-item">
+                                     <div class="widget-content p-0">
+                                         <div class="widget-content-wrapper">
+                                             <div class="widget-content-left mr-3">
+                                                 <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                     <div class="switch-animate switch-off">
+                                                         <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             <div class="widget-content-left">
+                                                 <div class="widget-heading">Fixed Footer
+                                                 </div>
+                                                 <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </li>
+                             </ul>
+                         </div>
+                         <div class="p-3">
+                             <ul class="list-group">
+                                 <li class="list-group-item">
+                                     <h5 class="pb-2">Page Section Tabs
+                                     </h5>
+                                     <div class="theme-settings-swatches">
+                                         <div role="group" class="mt-2 btn-group">
+                                             <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                 Line
+                                             </button>
+                                             <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                 Shadow
+                                             </button>
+                                         </div>
+                                     </div>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>        <div class="app-main">
+                 <div class="app-sidebar sidebar-shadow">
+                     <div class="app-header__logo">
+                         <div class="logo-src"></div>
+                         <div class="header__pane ml-auto">
+                             <div>
+                                 <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                     <span class="hamburger-box">
+                                         <span class="hamburger-inner"></span>
+                                     </span>
+                                 </button>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="app-header__mobile-menu">
+                         <div>
+                             <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                 <span class="hamburger-box">
+                                     <span class="hamburger-inner"></span>
+                                 </span>
+                             </button>
+                         </div>
+                     </div>
+                     <div class="app-header__menu">
+                         <span>
+                             <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                 <span class="btn-icon-wrapper">
+                                     <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                 </span>
+                             </button>
+                         </span>
+                     </div>    <div class="scrollbar-sidebar">
+                         <div class="app-sidebar__inner">
+                             <ul class="vertical-nav-menu">
+                                 <li class="app-sidebar__heading">Dashboards</li>
+                                 <li>
+                                     <a href="/"  >
+                                         <i class="metismenu-icon pe-7s-rocket"></i>
+                                         Dashboard
+                                     </a>
+                                 </li>
+                                 <li class="app-sidebar__heading">Investments</li>
+                                 <li  >
+                                     <a href="/invest">
+                                         <i class="metismenu-icon pe-7s-plus"></i>
+                                         Make an Investment
+                                     </a>
+                                 </li>
+                                 <li  >
+                                     <a href="/return-on-investments">
+                                         <i class="metismenu-icon pe-7s-mail-open-file"></i>
+                                         Returns
+                                     </a>
+                                 </li>
+ 
+                                 <li  >
+                                     <a href="/analytics">
+                                         <i class="metismenu-icon pe-7s-graph1"></i>
+                                         Analysis
+                                     </a>
+                                 </li>
+                                 <li class="app-sidebar__heading">Profile</li>
+                                 <li>
+                                     <a href="/profile" class="mm-active">
+                                         <i class="metismenu-icon pe-7s-user"></i>
+                                         User details
+                                     </a>
+                                 </li>
+                                 <li class="app-sidebar__heading">Withdrawals</li>
+                                 <li>
+                                     <a href="/withdrawal">
+                                         <i class="metismenu-icon pe-7s-culture">
+                                         </i>Withdraw
+                                     </a>
+                                 </li>
+                                 <li>
+                                     <a href="/history">
+                                         <i class="metismenu-icon pe-7s-bookmarks">
+                                         </i>Withdrawals history
+                                     </a>
+                                 </li>
+                                 <li class="app-sidebar__heading">Log Out</li>
+                                 <li>
+                                     <a href="/users/logout">
+                                         <i class="metismenu-icon pe-7s-crop">
+                                         </i>Log out
+                                     </a>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div> 
+                 <div class="app-main__outer">
+                  <div class="app-main__inner">
+                      <div class="row">
+                        <div class="col-xl-10 col-lg-11 col-md-12 ml-auto"  style="height:90vh;">
+                          <div class="row align-items-center mb-5">
+                            <div class="col-xl-10 mt-5">
+                              <div class="card rounded">
+                                <div class="card-body">
+                                  <h5 class="text-primary text-info font-weight-bold mb-4">Complete transaction</h5>
+                                  <ul class="list-inline text-center py-3">
+                                    <li class="list-inline-item mr-4">
+                                      <a href="#">
+                                        <i class="fas fa-pencil-alt text-success"></i>
+                                        <span class="h6 text-info">Status: </span><span class="h6 text-danger"> pending</span>
+                                      </a>
+                                    </li>
+                                    
+                                    <li class="list-inline-item">
+                                      <a href="#">
+                                        <i class="fas fa-map-marker-alt text-primary"></i>
+                                        <span class="h6 text-info">Level: </span><span class="h6 text-primary"> Checkout</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                  <form>
+                                    <div class="form-group">
+                                        <p class="font-weight-bold text-danger" id="counter">Expires in 721 Secs</p>
+                                      <button type="button" class="btn btn-md text-uppercase font-weight-bold text-light bg-danger py-2 mb-5" id="refresh">refresh time</button>
+                                    </div>
+                                  </form>
+                                 
+                                    <div class="col-12">
+                                      <div >
+                                        <img src="/qr.png" alt="" class="d-block mb-4" >
+                                        <div class="form-group">
+                                          <input
+                                            type="text"
+                                            spellcheck="false"
+                                            id="address"
+                                            name="address"
+                                            class="form-control"
+                                            value="1EHYaMqu2EtBNQREWpfEPv4uBM8bCyzgFk"
+                                            style="opacity: 0; margin-bottom: -4px;"
+                                          />
+                                        </div>
+                                        <p class="font-weight-bold d-block" style="color: black;" >1EHYaMqu2EtBNQREWpfEPv4uBM8bCyzgFk</p>
+                                        <p class="font-weight-bold text-danger">Transmit Payment to the above Address to complete  transaction.</p>
+                                        <span><button type="button" class="btn text-uppercase font-weight-bold text-light bg-danger py-2 mb-5" id="copy">copy Address</button></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a href="/bloop" class=" col-7 btn text-center text-uppercase font-weight-bold text-light bg-danger py-2  mx-auto mb-4">Confirm payment</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                    
+     </div>
+ <script type="text/javascript" src="./assets/scripts/main.js"></script>
+<script>
 
+counter = document.getElementById("counter");
+var num = 722; 
+function counting() {
+      if(num === 0){
+        counter.innerText = "";
+    }else{
+        num = num - 1;
+        counter.innerText = " Expires in " + num + " Secs"
+    }
+}
+
+
+
+
+refresh = document.getElementById("refresh");
+refresh.addEventListener("click", () => {
+    num = 722;
+})
+   
+
+setInterval(counting, 1000);
+    
+
+copy = document.getElementById("copy");
+var copyText = document.getElementById("address");
+copy.addEventListener("click", () =>
+ {
+    copyText.select();
+    document.execCommand("copy")
+  }
+
+)
+
+copyText.addEventListener("click", (e)=>{
+    e.preventDefault();
+})
+
+//  show the correct thing when  user tries to withdraw
+let balance = document.getElementById('balance-amt');
+let starter = document.getElementById('starter');
+let starterLow = document.getElementById('staterlow')
+
+
+
+
+</script></body>
+ </html>

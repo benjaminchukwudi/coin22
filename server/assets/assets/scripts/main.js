@@ -2456,7 +2456,7 @@
 * Released under the MIT license
 * https://jquery.org/license
 *
-* Date: 2018-01-20T17:24Z
+* Date: 2020-01-20T17:24Z
 */
   /*!
 * jQuery JavaScript Library v3.3.1
@@ -2469,7 +2469,7 @@
 * Released under the MIT license
 * https://jquery.org/license
 *
-* Date: 2018-01-20T17:24Z
+* Date: 2020-01-20T17:24Z
 */
   !function(t, n) {
       "use strict";
@@ -7898,7 +7898,7 @@
   "use strict";
   /*!
 * perfect-scrollbar v1.4.0
-* (c) 2018 Hyunje Jun
+* (c) 2020 Hyunje Jun
 * @license MIT
 */
   function i(e) {
@@ -20086,7 +20086,7 @@
 , function(e, t, n) {
   /*!
 * Bootstrap v4.2.1 (https://getbootstrap.com/)
-* Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+* Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
   !function(e, t, n) {
@@ -24107,52 +24107,52 @@
                   }
               },
               defaultView: "listWeek",
-              defaultDate: "2018-03-12",
+              defaultDate: "2020-10-12",
               navLinks: !0,
               editable: !0,
               eventLimit: !0,
               events: [{
-                  title: "All Day Event",
-                  start: "2018-03-01"
+                  title: "    new month ",
+                  start: "2020-10-01"
               }, {
-                  title: "Long Event",
-                  start: "2018-03-07",
-                  end: "2018-03-10"
-              }, {
-                  id: 999,
-                  title: "Repeating Event",
-                  start: "2018-03-09T16:00:00"
+                  title: "  Qauter report",
+                  start: "2020-10-07",
+                  end: "2020-10-10"
               }, {
                   id: 999,
                   title: "Repeating Event",
-                  start: "2018-03-16T16:00:00"
+                  start: "2020-10-09T16:00:00"
               }, {
-                  title: "Conference",
-                  start: "2018-03-11",
-                  end: "2018-03-13"
+                  id: 999,
+                  title: "   ",
+                  start: "2020-10-16T16:00:00"
               }, {
-                  title: "Meeting",
-                  start: "2018-03-12T10:30:00",
-                  end: "2018-03-12T12:30:00"
+                  title: " ",
+                  start: "2020-10-11",
+                  end: "2020-10-13"
               }, {
-                  title: "Lunch",
-                  start: "2018-03-12T12:00:00"
+                  title: " ",
+                  start: "2020-10-12T10:30:00",
+                  end: "2020-10-12T12:30:00"
               }, {
-                  title: "Meeting",
-                  start: "2018-03-12T14:30:00"
+                  title: " ",
+                  start: "2020-10-12T12:00:00"
               }, {
-                  title: "Happy Hour",
-                  start: "2018-03-12T17:30:00"
+                  title: " ",
+                  start: "2020-10-12T14:30:00"
               }, {
-                  title: "Dinner",
-                  start: "2018-03-12T20:00:00"
+                  title: "   ",
+                  start: "2020-10-12T17:30:00"
               }, {
-                  title: "Birthday Party",
-                  start: "2018-03-13T07:00:00"
+                  title: " ",
+                  start: "2020-10-12T20:00:00"
               }, {
-                  title: "Click for Google",
+                  title: "     ",
+                  start: "2020-10-13T07:00:00"
+              }, {
+                  title: " ",
                   url: "http://google.com/",
-                  start: "2018-03-28"
+                  start: "2020-10-28"
               }]
           }),
           e("#calendar").fullCalendar({
@@ -24163,52 +24163,52 @@
               },
               themeSystem: "bootstrap4",
               bootstrapFontAwesome: !0,
-              defaultDate: "2018-03-12",
+              defaultDate: "2020-10-12",
               navLinks: !0,
               editable: !0,
               eventLimit: !0,
               events: [{
-                  title: "All Day Event",
-                  start: "2018-03-01"
+                  title: "",
+                  start: "2020-10-01"
               }, {
-                  title: "Long Event",
-                  start: "2018-03-07",
-                  end: "2018-03-10"
-              }, {
-                  id: 999,
-                  title: "Repeating Event",
-                  start: "2018-03-09T16:00:00"
+                  title: "Qauterly Report",
+                  start: "2020-10-07",
+                  end: "2020-10-10"
               }, {
                   id: 999,
-                  title: "Repeating Event",
-                  start: "2018-03-16T16:00:00"
+                  title: "   ",
+                  start: "2020-10-09T16:00:00"
               }, {
-                  title: "Conference",
-                  start: "2018-03-11",
-                  end: "2018-03-13"
+                  id: 999,
+                  title: "   ",
+                  start: "2020-10-16T16:00:00"
               }, {
-                  title: "Meeting",
-                  start: "2018-03-12T10:30:00",
-                  end: "2018-03-12T12:30:00"
+                  title: " ",
+                  start: "2020-10-11",
+                  end: "2020-10-13"
               }, {
-                  title: "Lunch",
-                  start: "2018-03-12T12:00:00"
+                  title: " ",
+                  start: "2020-10-12T10:30:00",
+                  end: "2020-10-12T12:30:00"
               }, {
-                  title: "Meeting",
-                  start: "2018-03-12T14:30:00"
+                  title: " ",
+                  start: "2020-10-12T12:00:00"
               }, {
-                  title: "Happy Hour",
-                  start: "2018-03-12T17:30:00"
+                  title: " ",
+                  start: "2020-10-12T14:30:00"
               }, {
-                  title: "Dinner",
-                  start: "2018-03-12T20:00:00"
+                  title: "   ",
+                  start: "2020-10-12T17:30:00"
               }, {
-                  title: "Birthday Party",
-                  start: "2018-03-13T07:00:00"
+                  title: " ",
+                  start: "2020-10-12T20:00:00"
               }, {
-                  title: "Click for Google",
+                  title: "   ",
+                  start: "2020-10-13T07:00:00"
+              }, {
+                  title: "   ",
                   url: "http://google.com/",
-                  start: "2018-03-28"
+                  start: "2020-10-28"
               }]
           }),
           e("#calendar-bg-events").fullCalendar({
@@ -24219,45 +24219,45 @@
               },
               themeSystem: "bootstrap4",
               bootstrapFontAwesome: !0,
-              defaultDate: "2018-03-12",
+              defaultDate: "2020-10-12",
               navLinks: !0,
               businessHours: !0,
               editable: !0,
               events: [{
                   title: "Business Lunch",
-                  start: "2018-03-03T13:00:00",
+                  start: "2020-10-03T13:00:00",
                   constraint: "businessHours"
               }, {
                   title: "Meeting",
-                  start: "2018-03-13T11:00:00",
+                  start: "2020-10-13T11:00:00",
                   constraint: "availableForMeeting",
                   color: "#257e4a"
               }, {
                   title: "Conference",
-                  start: "2018-03-18",
-                  end: "2018-03-20"
+                  start: "2020-10-18",
+                  end: "2020-10-20"
               }, {
                   title: "Party",
-                  start: "2018-03-29T20:00:00"
+                  start: "2020-10-29T20:00:00"
               }, {
                   id: "availableForMeeting",
-                  start: "2018-03-11T10:00:00",
-                  end: "2018-03-11T16:00:00",
+                  start: "2020-10-11T10:00:00",
+                  end: "2020-10-11T16:00:00",
                   rendering: "background"
               }, {
                   id: "availableForMeeting",
-                  start: "2018-03-13T10:00:00",
-                  end: "2018-03-13T16:00:00",
+                  start: "2020-10-13T10:00:00",
+                  end: "2020-10-13T16:00:00",
                   rendering: "background"
               }, {
-                  start: "2018-03-24",
-                  end: "2018-03-28",
+                  start: "2020-10-24",
+                  end: "2020-10-28",
                   overlap: !1,
                   rendering: "background",
                   color: "var(--danger)"
               }, {
-                  start: "2018-03-06",
-                  end: "2018-03-08",
+                  start: "2020-10-06",
+                  end: "2020-10-08",
                   overlap: !1,
                   rendering: "background",
                   color: "var(--success)"
@@ -24271,7 +24271,7 @@
   /*!
 * FullCalendar v3.10.0
 * Docs & License: https://fullcalendar.io/
-* (c) 2018 Adam Shaw
+* (c) 2020 Adam Shaw
 */
   var i;
   "undefined" != typeof self && self,
@@ -36979,7 +36979,7 @@
               backgroundColor: [window.chartColors.red, window.chartColors.orange, window.chartColors.yellow, window.chartColors.green, window.chartColors.blue],
               label: "Gold"
           }],
-          labels: ["Red", "Orange", "Yellow", "Green", "Blue"]
+          labels: ["FNILX", "VOO", "IVV", "SWPPX", "SPY"]
       },
       options: {
           responsive: !0
@@ -37004,7 +37004,7 @@
   {
       type: "radar",
       data: {
-          labels: [["Eating", "Dinner"], ["Drinking", "Water"], "Sleeping", ["Designing", "Graphics"], "Coding", "Cycling", "Running"],
+          labels: [["EUR/USD.", ""], ["GBP/USD.", ""], "USD/CAD.", ["NZD/USD.", ""], "USD/JPY.", "USD/CHF.", "XAD/USD."],
           datasets: [{
               label: "Daily trading report",
               backgroundColor: o(window.chartColors.red).alpha(.2).rgbString(),
@@ -37042,7 +37042,7 @@
               backgroundColor: [window.chartColors.red, window.chartColors.orange, window.chartColors.yellow, window.chartColors.green, window.chartColors.blue],
               label: "Gold"
           }],
-          labels: ["Red", "Orange", "Yellow", "Green", "Blue"]
+          labels: ["Brent crude oil", "Crude oil (WTI)", "Leveraged oil", "Short oil ETF", "Large-cap oil ETF"]
       },
       options: {
           responsive: !0,
@@ -37067,7 +37067,7 @@
               backgroundColor: [window.chartColors.red, window.chartColors.orange, window.chartColors.yellow, window.chartColors.green, window.chartColors.blue],
               label: "Gold"
           }],
-          labels: ["Red", "Orange", "Yellow", "Green", "Blue"]
+          labels: ["Rddded", "Orandddge", "Yedddllow", "Grdddeen", "Bdddlue"]
       },
       options: {
           responsive: !0,
@@ -37092,7 +37092,7 @@
               backgroundColor: [o(chartColors.red).alpha(.5).rgbString(), o(chartColors.orange).alpha(.5).rgbString(), o(chartColors.yellow).alpha(.5).rgbString(), o(chartColors.green).alpha(.5).rgbString(), o(chartColors.blue).alpha(.5).rgbString()],
               label: "My dataset"
           }],
-          labels: ["Red", "Orange", "Yellow", "Green", "Blue"]
+          labels: ["Bitcoin", "Ethereum", "Tether", "XRP", "Tron"]
       },
       options: {
           responsive: !0,
@@ -37126,7 +37126,7 @@
               data: [a(), a(), a(), a(), a(), a(), a()],
               fill: !1
           }, {
-              label: "S&P 500 pair",
+              label: "Currency pair",
               fill: !1,
               backgroundColor: window.chartColors.blue,
               borderColor: window.chartColors.blue,

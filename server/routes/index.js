@@ -8,6 +8,11 @@ router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
 // Contact
 router.get('/contact', forwardAuthenticated, (req, res) => res.render('contact'));
 
+router.get('/how-to-buy-bitcoin', (req, res) => res.render('bitcoin'));
+
+router.get('/what-is-bitcoin', (req, res) => res.render('howtobuybtc'));
+
+
 
 //ABOUT
 router.get('/about', forwardAuthenticated, (req, res) => res.render('about'));
@@ -52,8 +57,17 @@ router.get('/invest', ensureAuthenticated, (req, res) =>
   })
 );
 
+router.get('/return-on-investments', ensureAuthenticated, (req, res)=>{
+  res.render('returns')
+  user: req.user
+})
 router.get('/withdrawal', ensureAuthenticated, (req, res) =>
   res.render('withdrawal', {
+    user: req.user
+  })
+);
+router.get('/history', ensureAuthenticated, (req, res) =>
+  res.render('history', {
     user: req.user
   })
 );

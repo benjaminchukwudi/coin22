@@ -14,11 +14,11 @@ router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
 // Register
 router.post('/register', (req, res) => {
-  const { first_name, last_name, email, password, password2, code, wallet,} = req.body;
+  const { fisrt_name, last_name, email, password, password2, code, wallet,} = req.body;
   let errors = [];
-  const referalcode = first_name + Math.floor(Math.random() * 76876559);
+  const referalcode = fisrt_name + Math.floor(Math.random() * 76876559);
 
-  if (!first_name || !last_name|| !email || !password || !password2   || !wallet ) {
+  if (!fisrt_name || !last_name|| !email || !password || !password2   || !wallet ) {
     errors.push({ msg: 'Please enter all fields' });
   }
 
@@ -33,7 +33,7 @@ router.post('/register', (req, res) => {
   if (errors.length > 0) {
     res.render('register', {
       errors,
-      first_name,
+      fisrt_name,
       last_name,
       email,
       password,
@@ -46,7 +46,7 @@ router.post('/register', (req, res) => {
         errors.push({ msg: 'Email already exists' });
         res.render('register', {
           errors,
-          first_name,
+          fisrt_name,
           last_name,
           email,
           password,
@@ -57,7 +57,7 @@ router.post('/register', (req, res) => {
         });
       } else {
         const newUser = new User({
-          first_name,
+          fisrt_name,
           last_name,
           email,
           password,
@@ -368,7 +368,7 @@ router.post('/register', (req, res) => {
                     <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 40px; padding-left: 40px; padding-top: 10px; padding-bottom: 10px; font-family: Tahoma, sans-serif"><![endif]-->
                     <div style="color:#191919;font-family:Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;line-height:1.5;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;">
                     <div style="line-height: 1.5; font-size: 12px; color: #191919; font-family: Montserrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; mso-line-height-alt: 18px;">
-                    <p style="font-size: 16px; line-height: 1.5; text-align: center; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><strong><span style="font-size: 38px;">${first_name} ${last_name} </span></strong></p>
+                    <p style="font-size: 16px; line-height: 1.5; text-align: center; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><strong><span style="font-size: 38px;">${fisrt_name} ${last_name} </span></strong></p>
                     <p style="font-size: 16px; line-height: 1.5; text-align: center; word-break: break-word; mso-line-height-alt: 24px; margin: 0;"><strong><span style="font-size: 38px;">welcome to Coin Analytica!</span></strong></p>
                     </div>
                     </div>
